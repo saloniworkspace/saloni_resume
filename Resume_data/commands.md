@@ -1,1 +1,0 @@
-Change my profile picture from the home page and replace with 1752336031910.jpeg. Adjust the website home page as I am able to see 10+ years and experience, these are hidden in white background. Also add recruitment consultant as my skills. I have worked as a recruiter in Neerinfo.
