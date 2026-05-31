@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Saloni Bansal | DEI Consultant</title>
+  <meta name="description" content="Get in touch with Saloni Bansal for DEI consulting, workshops, and inclusive strategy development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Saloni<span>Bansal</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Let's discuss how we can create an inclusive workplace together</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> Contact
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid fade-in">
+        <div class="contact-info-card">
+          <h3>Let's Connect</h3>
+          <p>Whether you're looking to build a DEI strategy, organize an inclusive event, or simply want to chat about inclusion, I'd love to hear from you.</p>
+          <div class="contact-info-item">
+            <div class="icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>saloni.bansal2494@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon-box">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 9871798635</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon-box">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/salonibansal9871</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>India</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/salonibansal9871" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:saloni.bansal2494@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h3>Send a Message</h3>
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="dei-strategy">DEI Strategy & Roadmap</option>
+                <option value="erg-development">ERG Development & Governance</option>
+                <option value="lgbtq-inclusion">LGBTQ+ Inclusion Programs</option>
+                <option value="disability-inclusion">Disability Inclusion & Accessibility</option>
+                <option value="inclusive-training">Inclusive Leadership Training</option>
+                <option value="dei-analytics">DEI Analytics & Insights</option>
+                <option value="event-planning">Event & Conference Planning</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your organization's DEI needs..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Banner -->
+  <div class="image-banner">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80" alt="Team collaboration">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h2>Every Conversation About Inclusion Matters</h2>
+      <p>Let's start one that transforms your workplace</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">Saloni<span>Bansal</span></div>
+          <p>Strategic DEI Consultant helping organizations build inclusive cultures where every individual thrives.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/salonibansal9871" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:saloni.bansal2494@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">DEI Strategy</a></li>
+            <li><a href="services.html">ERG Development</a></li>
+            <li><a href="services.html">Inclusive Training</a></li>
+            <li><a href="services.html">LGBTQ+ Programs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:saloni.bansal2494@gmail.com">saloni.bansal2494@gmail.com</a></li>
+            <li><a href="tel:+919871798635">+91 9871798635</a></li>
+            <li><a href="blogs.html">Read Blog</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Saloni Bansal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

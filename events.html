@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Saloni Bansal | DEI Events & Conferences</title>
+  <meta name="description" content="Explore DEI events organized by Saloni Bansal - Pride celebrations, award ceremonies, mentoring programs, disability awareness, and inclusion workshops.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Saloni<span>Bansal</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Events & Conferences</h1>
+      <p>A showcase of DEI events, celebrations, and awareness programs I've organized and participated in</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> Events
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="event-filters" id="eventFilters">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="award">Awards</button>
+        <button class="filter-btn" data-filter="pride">Pride</button>
+        <button class="filter-btn" data-filter="inclusion">Inclusion</button>
+        <button class="filter-btn" data-filter="workshop">Workshops</button>
+      </div>
+
+      <div class="events-grid" id="eventsGrid">
+        <!-- Avtar Award Ceremony -->
+        <div class="event-card fade-in" data-category="award">
+          <div class="event-card-image">
+            <img src="images/events/avtar-award/avtar-1.jpeg" alt="Avtar Award Ceremony - Top 10 Best Companies for Women">
+            <div class="event-category">Award Ceremony</div>
+          </div>
+          <div class="event-card-body">
+            <h3>Avtar Award Ceremony</h3>
+            <p>KPMG recognized in the Top 10 Hall of Fame - Best Companies for Women India 2025. Honored by Avtar & Seramount for 5 consecutive years in the Top 10.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-map-marker-alt"></i> India</span>
+              <span><i class="fas fa-award"></i> Hall of Fame</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avtar Most Inclusive -->
+        <div class="event-card fade-in" data-category="award">
+          <div class="event-card-image">
+            <img src="images/events/avtar-award/avtar-2.jpeg" alt="Avtar Most Inclusive Companies Index">
+            <div class="event-category">Award Ceremony</div>
+          </div>
+          <div class="event-card-body">
+            <h3>Most Inclusive Companies Index</h3>
+            <p>KPMG awarded Champions status in the Most Inclusive Companies Index India 2025 by Avtar & Seramount, recognizing excellence in workplace inclusion.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-map-marker-alt"></i> India</span>
+              <span><i class="fas fa-trophy"></i> Champions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IWEI Award -->
+        <div class="event-card fade-in" data-category="award">
+          <div class="event-card-image">
+            <img src="images/events/iwei-award/iwei-1.jpeg" alt="IWEI Award Ceremony">
+            <div class="event-category">Award Ceremony</div>
+          </div>
+          <div class="event-card-body">
+            <h3>IWEI Award Ceremony</h3>
+            <p>Recognized at the India Workplace Equality Index (IWEI) Award Ceremony for outstanding commitment to LGBTQ+ workplace inclusion and equality.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-map-marker-alt"></i> India</span>
+              <span><i class="fas fa-rainbow"></i> LGBTQ+ Inclusion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Empowering Circle -->
+        <div class="event-card fade-in" data-category="inclusion">
+          <div class="event-card-image">
+            <img src="images/events/empowering-circle/empowering-1.jpeg" alt="Empowering Circle - Women Mentoring Program">
+            <div class="event-category">Mentoring</div>
+          </div>
+          <div class="event-card-body">
+            <h3>Empowering Circle - Women Mentoring</h3>
+            <p>A structured women mentoring program designed to empower women leaders through peer mentoring, knowledge sharing, and career development initiatives.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-users"></i> Mentoring Program</span>
+              <span><i class="fas fa-female"></i> Women Empowerment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pride Celebrations -->
+        <div class="event-card fade-in" data-category="pride">
+          <div class="event-card-image">
+            <img src="images/events/pride/pride-7.jpeg" alt="Pride Celebration">
+            <div class="event-category">Pride</div>
+          </div>
+          <div class="event-card-body">
+            <h3>Pride Month Celebration</h3>
+            <p>Multi-city Pride celebration driving LGBTQ+ inclusion and allyship through vibrant in-person events, panel discussions, and community-building activities.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-map-marker-alt"></i> 5 Cities</span>
+              <span><i class="fas fa-rainbow"></i> LGBTQ+ Allyship</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pride Allyship -->
+        <div class="event-card fade-in" data-category="pride">
+          <div class="event-card-image">
+            <img src="images/events/pride/pride-1.jpeg" alt="Pride Allyship Event">
+            <div class="event-category">Pride</div>
+          </div>
+          <div class="event-card-body">
+            <h3>Pride Allyship Campaign</h3>
+            <p>Interactive allyship challenge engaging employees across locations to demonstrate solidarity and support for LGBTQ+ colleagues and communities.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-heart"></i> Allyship</span>
+              <span><i class="fas fa-flag"></i> Campaign</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IDPwD -->
+        <div class="event-card fade-in" data-category="inclusion">
+          <div class="event-card-image">
+            <img src="images/events/idpwd/idpwd-1.jpeg" alt="International Day of Persons with Disabilities">
+            <div class="event-category">Disability Inclusion</div>
+          </div>
+          <div class="event-card-body">
+            <h3>International Day of PwD (IDPwD)</h3>
+            <p>Organized awareness programs for International Day of Persons with Disabilities, promoting disability inclusion, accessibility, and UDID awareness.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-universal-access"></i> Accessibility</span>
+              <span><i class="fas fa-calendar"></i> Annual Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intergenerational -->
+        <div class="event-card fade-in" data-category="workshop">
+          <div class="event-card-image">
+            <img src="images/events/intergenerational/intergenerational-1.jpeg" alt="Intergenerational Inclusion Masterclass">
+            <div class="event-category">Masterclass</div>
+          </div>
+          <div class="event-card-body">
+            <h3>Intergenerational Inclusion Masterclass</h3>
+            <p>A masterclass on bridging generational gaps in the workplace, fostering mutual understanding and collaboration across age groups.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-chalkboard-teacher"></i> Masterclass</span>
+              <span><i class="fas fa-people-arrows"></i> Multi-generational</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Support Staff Workshop -->
+        <div class="event-card fade-in" data-category="workshop">
+          <div class="event-card-image">
+            <img src="images/events/sensitization-workshop/workshop-1.jpeg" alt="Support Staff Sensitization Workshop">
+            <div class="event-category">Workshop</div>
+          </div>
+          <div class="event-card-body">
+            <h3>Support Staff Sensitization Workshop</h3>
+            <p>Inclusive sensitization workshops conducted for support staff, ensuring that the culture of inclusion extends to every level of the organization.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-users-cog"></i> Sensitization</span>
+              <span><i class="fas fa-handshake"></i> All Levels</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-tag">Gallery</div>
+        <h2>Event Highlights</h2>
+        <p>Moments captured from various inclusion events and celebrations</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-2.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-3.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/empowering-circle/empowering-2.jpeg" alt="Women Mentoring">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-4.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/idpwd/idpwd-2.jpeg" alt="IDPwD Event">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-5.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/sensitization-workshop/workshop-2.jpeg" alt="Workshop">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-6.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/empowering-circle/empowering-3.jpeg" alt="Women Mentoring">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-8.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/idpwd/idpwd-3.jpeg" alt="IDPwD Event">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-9.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/sensitization-workshop/workshop-3.jpeg" alt="Workshop">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/pride/pride-10.jpeg" alt="Pride Celebration">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/avtar-award/avtar-1.jpeg" alt="Avtar Award">
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="images/events/avtar-award/avtar-2.jpeg" alt="Avtar Award">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img src="" alt="Gallery Image" id="lightboxImage">
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Interested in Organizing a DEI Event?</h2>
+      <p>From Pride celebrations to inclusion masterclasses, I can help you design impactful events for your organization.</p>
+      <a href="contact.html" class="btn">Let's Plan Together</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">Saloni<span>Bansal</span></div>
+          <p>Strategic DEI Consultant helping organizations build inclusive cultures where every individual thrives.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/salonibansal9871" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:saloni.bansal2494@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">DEI Strategy</a></li>
+            <li><a href="services.html">ERG Development</a></li>
+            <li><a href="services.html">Inclusive Training</a></li>
+            <li><a href="services.html">LGBTQ+ Programs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:saloni.bansal2494@gmail.com">saloni.bansal2494@gmail.com</a></li>
+            <li><a href="tel:+919871798635">+91 9871798635</a></li>
+            <li><a href="blogs.html">Read Blog</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Saloni Bansal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
