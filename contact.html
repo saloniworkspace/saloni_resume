@@ -62,15 +62,6 @@
           </div>
           <div class="contact-info-item">
             <div class="icon-box">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div>
-              <h4>Phone</h4>
-              <p>+91 9871798635</p>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="icon-box">
               <i class="fab fa-linkedin-in"></i>
             </div>
             <div>
@@ -95,49 +86,104 @@
 
         <div class="contact-form-wrapper">
           <h3>Send a Message</h3>
-          <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div data-fs-success style="display:none;padding:30px;text-align:center;color:var(--secondary);font-size:1.1rem;font-weight:600;">
+            <i class="fas fa-check-circle" style="font-size:2.5rem;margin-bottom:15px;display:block;"></i>
+            Thank you for reaching out! I'll get back to you shortly.
+          </div>
+          <div data-fs-error style="display:none;padding:12px 18px;background:#fce4ec;color:#c62828;border-radius:8px;margin-bottom:15px;font-size:0.9rem;"></div>
+          <form id="contactForm">
+            <input type="hidden" name="_subject" value="New enquiry from your DEI website">
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required data-fs-field>
+                <span data-fs-error="firstName" style="color:#c62828;font-size:0.8rem;"></span>
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required data-fs-field>
+                <span data-fs-error="lastName" style="color:#c62828;font-size:0.8rem;"></span>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required data-fs-field>
+                <span data-fs-error="email" style="color:#c62828;font-size:0.8rem;"></span>
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                <div style="display:flex;gap:8px;">
+                  <select id="countryCode" name="countryCode" style="width:130px;flex-shrink:0;" data-fs-field>
+                    <option value="+91">+91 IN</option>
+                    <option value="+1">+1 US</option>
+                    <option value="+44">+44 UK</option>
+                    <option value="+61">+61 AU</option>
+                    <option value="+49">+49 DE</option>
+                    <option value="+33">+33 FR</option>
+                    <option value="+81">+81 JP</option>
+                    <option value="+86">+86 CN</option>
+                    <option value="+971">+971 AE</option>
+                    <option value="+65">+65 SG</option>
+                    <option value="+60">+60 MY</option>
+                    <option value="+966">+966 SA</option>
+                    <option value="+974">+974 QA</option>
+                    <option value="+27">+27 ZA</option>
+                    <option value="+55">+55 BR</option>
+                    <option value="+52">+52 MX</option>
+                    <option value="+82">+82 KR</option>
+                    <option value="+39">+39 IT</option>
+                    <option value="+34">+34 ES</option>
+                    <option value="+31">+31 NL</option>
+                    <option value="+46">+46 SE</option>
+                    <option value="+41">+41 CH</option>
+                    <option value="+64">+64 NZ</option>
+                    <option value="+353">+353 IE</option>
+                    <option value="+7">+7 RU</option>
+                    <option value="+62">+62 ID</option>
+                    <option value="+63">+63 PH</option>
+                    <option value="+66">+66 TH</option>
+                    <option value="+84">+84 VN</option>
+                    <option value="+234">+234 NG</option>
+                    <option value="+254">+254 KE</option>
+                    <option value="+20">+20 EG</option>
+                    <option value="+92">+92 PK</option>
+                    <option value="+880">+880 BD</option>
+                    <option value="+94">+94 LK</option>
+                    <option value="+977">+977 NP</option>
+                  </select>
+                  <input type="tel" id="phone" name="phone" placeholder="XXXXX XXXXX" data-fs-field>
+                </div>
               </div>
             </div>
             <div class="form-group">
               <label for="service">Service Interested In</label>
-              <select id="service" name="service">
+              <select id="service" name="service" data-fs-field>
                 <option value="">Select a service</option>
-                <option value="dei-strategy">DEI Strategy & Roadmap</option>
-                <option value="erg-development">ERG Development & Governance</option>
-                <option value="lgbtq-inclusion">LGBTQ+ Inclusion Programs</option>
-                <option value="disability-inclusion">Disability Inclusion & Accessibility</option>
-                <option value="inclusive-training">Inclusive Leadership Training</option>
-                <option value="dei-analytics">DEI Analytics & Insights</option>
-                <option value="event-planning">Event & Conference Planning</option>
-                <option value="other">Other</option>
+                <option value="DEI Strategy & Roadmap">DEI Strategy & Roadmap</option>
+                <option value="ERG Development & Governance">ERG Development & Governance</option>
+                <option value="LGBTQ+ Inclusion Programs">LGBTQ+ Inclusion Programs</option>
+                <option value="Disability Inclusion & Accessibility">Disability Inclusion & Accessibility</option>
+                <option value="Inclusive Leadership Training">Inclusive Leadership Training</option>
+                <option value="DEI Analytics & Insights">DEI Analytics & Insights</option>
+                <option value="Event & Conference Planning">Event & Conference Planning</option>
+                <option value="Other">Other</option>
               </select>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell me about your organization's DEI needs..." required></textarea>
+              <textarea id="message" name="message" placeholder="Tell me about your organization's DEI needs..." required data-fs-field></textarea>
+              <span data-fs-error="message" style="color:#c62828;font-size:0.8rem;"></span>
             </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;" data-fs-submit-btn>
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
           </form>
+          <script>
+            window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+            formspree('initForm', { formElement: '#contactForm', formId: 'meedwdyl' });
+          </script>
+          <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
         </div>
       </div>
     </div>
@@ -187,7 +233,6 @@
           <h4>Contact</h4>
           <ul class="footer-links">
             <li><a href="mailto:saloni.bansal2494@gmail.com">saloni.bansal2494@gmail.com</a></li>
-            <li><a href="tel:+919871798635">+91 9871798635</a></li>
             <li><a href="blogs.html">Read Blog</a></li>
             <li><a href="contact.html">Get in Touch</a></li>
           </ul>

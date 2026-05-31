@@ -152,24 +152,8 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// ===== Contact Form =====
-function handleSubmit(event) {
-  event.preventDefault();
-  const form = event.target;
-  const btn = form.querySelector('button[type="submit"]');
-  const originalContent = btn.innerHTML;
-
-  btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-  btn.style.background = '#1ABC9C';
-  btn.disabled = true;
-
-  setTimeout(() => {
-    btn.innerHTML = originalContent;
-    btn.style.background = '';
-    btn.disabled = false;
-    form.reset();
-  }, 3000);
-}
+// ===== Contact Form (powered by Formspree) =====
+// Form submissions are handled by Formspree and emailed to the configured address.
 
 // ===== Counter Animation =====
 function animateCounters() {
