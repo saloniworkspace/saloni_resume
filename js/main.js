@@ -4,9 +4,13 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 const navOverlay = document.getElementById('navOverlay');
 
-// Scroll effect for navbar
-if (navbar && !navbar.classList.contains('scrolled')) {
+// Scroll effect for navbar (only on landing page with transparent navbar)
+if (navbar && navbar.classList.contains('scrolled')) {
+  // Inner pages: mark as always-scrolled so menu close doesn't remove it
+  navbar.dataset.alwaysScrolled = 'true';
+} else if (navbar) {
   window.addEventListener('scroll', () => {
+    if (navLinks && navLinks.classList.contains('active')) return; // don't change while menu is open
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
@@ -15,13 +19,24 @@ if (navbar && !navbar.classList.contains('scrolled')) {
   });
 }
 
+// Force scrolled look when mobile menu is open
+function updateNavbarForMenu(menuOpen) {
+  if (menuOpen) {
+    navbar.classList.add('scrolled');
+  } else if (window.scrollY <= 50 && !navbar.dataset.alwaysScrolled) {
+    navbar.classList.remove('scrolled');
+  }
+}
+
 // Mobile menu toggle
 if (hamburger) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
     if (navOverlay) navOverlay.classList.toggle('active');
-    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    const isOpen = navLinks.classList.contains('active');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    updateNavbarForMenu(isOpen);
   });
 }
 
@@ -32,6 +47,7 @@ if (navOverlay) {
     navLinks.classList.remove('active');
     navOverlay.classList.remove('active');
     document.body.style.overflow = '';
+    updateNavbarForMenu(false);
   });
 }
 
@@ -42,6 +58,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     navLinks.classList.remove('active');
     if (navOverlay) navOverlay.classList.remove('active');
     document.body.style.overflow = '';
+    updateNavbarForMenu(false);
   });
 });
 
