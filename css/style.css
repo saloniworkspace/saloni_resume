@@ -1846,17 +1846,18 @@ p {
     right: 0;
   }
 
-  .nav-links a {
-    color: var(--dark);
+  .navbar .nav-links a {
+    color: var(--dark) !important;
     padding: 12px 20px;
     width: 100%;
     border-radius: var(--radius);
+    background: transparent;
   }
 
-  .nav-links a:hover,
-  .nav-links a.active {
-    background: var(--gradient-subtle);
-    color: var(--primary);
+  .navbar .nav-links a:hover,
+  .navbar .nav-links a.active {
+    background: var(--gradient-subtle) !important;
+    color: var(--primary) !important;
   }
 
   .hero .container {
